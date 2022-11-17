@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chartset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PERSONAL PORTFOLIO WEBSITE</title>
+        <link rel="stylesheet" href="portfolio.css">
+        <script src="https://kit.fontawesome.com/1fbd759a6b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+       <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/capture.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>FRONT END DEVELOPER</p>
+                <!--<marquee direction="right">--><h1>Hi, my name<br> is <span>STANLEY NJOROGE</span></h1>
+            </div>
+        </div>
+       </div>
+       <!--about-->
+       <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/back.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is stanley Njoroge and I am a front end<br>
+                    developer.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div> 
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>FRONT END DEVELOPER</span><br>Designing website using html,css and javascript</li>
+                            <li><span>JAVA PROGRAMMER</span><br>Making projects using java</li>
+                            <li><span>APP DEVELOPMENT</span><br>Building android apps</li>
+                            
+                        </ul> 
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>FRONT END DEVELOPER</span><br>Worked as a front end developer</li>
+                            <li><span>JAVA PROGRAMMER</span><br>Created several projects</li>
+                            <li><span>APP DEVELOPMENT</span><br>Building android apps</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>Designing website using html,css and javascript</li>
+                            <li><span>2021</span><br>Making projects using java</li>
+                            <li><span>2022</span><br>Building android apps</li>
+                            
+                        </ul>
+                    </div>
+                </div>       
+            </div>
+        </div>
+       </div>
+       <!--services-->
+       <div id="services">
+        <div class="container">
+           <h1 class="sub-title">My services</h1>
+           <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Designing</h2>
+                    <p>front end developer, java programmer</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Java programmer</h2>
+                    <p>front end developer, java programmer</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Android app developer</h2>
+                    <p>front end developer, java programmer</p>
+                    <a href="#">Learn more</a>
+                </div>
+           </div> 
+        </div>
+       </div>
+       <!--portfolio-->
+       <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="work">
+                    <div class="layer">
+                       <h3>Social media app</h3> 
+                       <p>This app connects you to the talented people<br>
+                         in the world</p>
+                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="work">
+                    <div class="layer">
+                        <h3>Video creator</h3> 
+                        <p>This videos connects you to the talented people<br>
+                          in the world</p>
+                          <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                     </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="work">
+                    <div class="layer">
+                        <h3>Project manager</h3> 
+                        <p>Able to manage project all around the world</p>
+                          <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                     </div>
+                </div>
+            </div>
+            <a href="#"class=btn>See more</a>
+        </div>
+       </div>
+       <!--contact-->
+       <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>Contact@example.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+25471234567</p>
+                    <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:sephkim100@gmail.com"><i class="fa-solid fa-inbox"></i></a>
+                    </div>
+                    <a href="images/unitForm.pdf" download class="btn btn2">Download CV</a>
+                <div class="contact-right">
+                    <form method="post" action="portfolio.php">
+                        <input type="text" name="firstName" placeholder="first name" required>
+                        <input type="text" name="lastName" placeholder="last name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="message" rows="6" placeholder="Your message" required></textarea>
+                        <button type="Submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div> 
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Njoroge. made with<i class="fas fa-heart"></i> for easy understanding</p>
+        </div>
+       </div>
+       <script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+                
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+                
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+       </script>
+       <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="0";
+        }
+       </script>
+          
+    </body>
+</html>
